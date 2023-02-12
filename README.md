@@ -6,6 +6,7 @@ Our approach will be to blur each pixel by setting it equal to the average of th
 ## Part 1: Serial blur function 
 
 Here are some results of the program with different values of Level. As you see in the pictures below, by increasing Level, the picture has become more blurred.
+
 ![image](https://user-images.githubusercontent.com/57262710/218325870-4b5d2224-ab50-4530-96f7-b37870f7bf23.png)
 
 ## Part 2: Parallel image blure
@@ -14,10 +15,13 @@ we are going to blur an image in parallel and compare the timing and results wit
 The program was run with 4 processors and level =5, and pictures below show the results. Proper window names were selected to differentiate between the images produced by the code. Furthermore, the mean square error (MSE) between channel values of the processed image in serial and parallel is calculated to verify the parallel code.
 
 Image section received by processors
+
 ![image](https://user-images.githubusercontent.com/57262710/218326126-d5625c99-6d04-485a-90ff-f15ea0eba0ad.png)
 
 Image sections proccessed by each processors
+
 ![image](https://user-images.githubusercontent.com/57262710/218326214-d3624ffe-6cd2-48a6-a221-a45aeb0b4d84.png)
 
 Final processed image
+
 ![image](https://user-images.githubusercontent.com/57262710/218326297-f4e5b28e-9a47-4d90-ba5e-2a4cd43c21ab.png)
