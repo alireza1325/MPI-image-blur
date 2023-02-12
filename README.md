@@ -25,3 +25,19 @@ Image sections proccessed by each processors
 Final processed image
 
 ![image](https://user-images.githubusercontent.com/57262710/218326297-f4e5b28e-9a47-4d90-ba5e-2a4cd43c21ab.png)
+
+## Part 3: Partition the image over columns
+
+The code written for part 2 is modified so that the work is divided based on columns of image, not rows. To do this, same as previous part, the number of working columns for each processor has been computed using the parallelRange function. Then for each processor, a unique vector data type is defined to send a specified number of columns since the number of columns that should be sent to each processor is different.
+
+Image section received by processors
+
+![image](https://user-images.githubusercontent.com/57262710/218326553-ac254241-342a-4eb7-bd2c-31ce1e6072e2.png)
+
+Image sections proccessed by each processors
+
+![image](https://user-images.githubusercontent.com/57262710/218326584-43e2647f-66b3-46b5-8e0f-0b3f5ab41fac.png)
+
+Compare the serial and parallel images
+
+![image](https://user-images.githubusercontent.com/57262710/218326620-a0fe3c09-387d-4451-bb1e-1ca43c1bf600.png)
